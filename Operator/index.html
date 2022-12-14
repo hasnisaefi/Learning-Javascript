@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Operator</title>
 </head>
+
 <body>
   <h1>hiiiiii</h1>
   <script>
 
     //OPERATOR MATEMATIKA
 
-    var namaa = 'hasniiiiiiii'
+    var namaa = 'hasni saefi'
     document.writeln(namaa)
     // perintah document.write() berfungsi untuk menuliskan ke dokumen HTML
     let tambah = 1 + 2;
-    document.writeln("<p>1+2=" , tambah ,"</p>")
-    
+    document.writeln("<p>1+2=", tambah, "</p>")
+
     let kurang = 1 - 2;
-    document.writeln("<p>1-2=" , kurang,"</p>")
+    document.writeln("<p>1-2=", kurang, "</p>")
 
 
+    // OPERATOR PERBANDINGAN (< , > , === , == , != , !== , <= , >= )
 
-    //OPERATOR PERBANDINGAN
+    let samaDengan = 5 != "5";
+    document.writeln(`hasil : ${samaDengan}`);
 
+
+    // OPERATOR LOGIKA ( && , || , ! )
+
+    const nilaiUjian = 90;
+    const nilaiAbsensi = 70;
+
+    const lulusUjian = nilaiUjian > 75;
+    const LulusAbsensi = nilaiAbsensi < 75;
+
+    const lulus = lulusUjian && LulusAbsensi;
+    document.writeln('<p>', lulus, '</p>');
+
+    /////////////////////////////////////////////////////////////////
+
+    // STRING TEMPLATE ( ` ` )
+
+    const nama = "hasniii"
+    const name = `NAMA : ${nama}`
+
+    console.log();
+
+
+    // EXPRESSION DI STRING TEMPLATE ( ` ` )
+
+    const nilai = 80;
+    const naikKelas = `NAMA : ${nama}, naik : ${nilai > 70}`;
+
+    console.log(naikKelas);
+
+
+    ////////////////////////////////////////////////////////////
+
+    // KONVERSI STRING DAN NUMBER
+
+    // document.writeln (`${parseInt("1.2")}`) Mengkonversi dari string ke number (bilangan bulat)
+    // jadi angka di belakang koma dianggap tdk ada
+
+    // document.writeln (`${parseFloat("1.2")}`) Mengkonversi dari string ke number (bilangan pecahan)
+
+    // document.writeln (`${Number("1.2")}`) Mengkonversi dari string ke number (bilangan bulat atau pecahan)
     
+    // const nilai1 = "3";
+    // const nilai2 = "3";
+    // const jumlah = nilai1+nilai2;
+
+    // document.writeln (`${jumlah}`)
+
+    const nilai1 = parseInt("3");
+    const nilai2 = 3;
+    const jumlah = nilai1+nilai2;
+
+    document.writeln (`${jumlah}`)
+
+
   </script>
 </body>
+
 </html>
