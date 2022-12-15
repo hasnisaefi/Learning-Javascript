@@ -53,17 +53,34 @@
       // const name = ["a", "b", "c", "d", "e"]
       // for( var i = 0; i < 5; i++) {
       // console.log('nama', ':' ,name[i]);}
-
-      // 4. method pada array (push, pop,)
-
+      
+      
+      // 4. method pada array (push, pop, foreach, map , filter)
+      
       // const name = ["a", "b", "c",]
       // name.push('d', 'e') //untuk menambah array
       // console.log(name);
-
+      
       // const name = ["a", "b", "c",]
       // name.pop() //array paling akhir seolah hilang
       // console.log(name);
+      
+      // const name = [1,2,3,4,5]
+      // name.forEach(function(angka){
+      // console.log(angka);
+      // });
 
+      // const angka = [1,2,3,4,5]
+      // const angka2 = angka.map(function (nomer) {
+      // return nomer * 2;
+      // })
+      // console.log(angka2);
+
+      const angka = [1,2,3,4,5,6,7]
+      const angka2 = angka.filter(function(x) { //filter bisa mengembalikan banyak nilai
+      return x < 5;
+      })
+      console.log(angka2);
 
   </script>
 </body>
