@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Array</title>
 </head>
+
 <body>
-  
+  <!-- <button onClick="alert('Tombol diklik!')">Klik Saya</button> -->
+
+  <script>
+
+    // POPUP ( alert, prompt , confirm)
+
+    // Saat kita hanya ingin menampilkan informasi saja, maka gunakan alert().
+    // Saat kita ingin jawaban konfirmasi dari pengguna, maka gunakan confirm().
+    // dan apabila kita ingin mengambil data teks dari pengguna, maka gunakan prompt().
+
+    // alert("halo")
+    
+    //  const yakin = confirm('apakah anda yakin');
+    //  if (yakin === true) {
+    //   alert('tekan OK!')
+    //  } else {
+    //   alert ('tekan cancel')
+    //  }
+
+    //  const nama = prompt("Siapa nama kamu?", "");
+    //  document.writeln(`halo, ${nama}`);
+
+
+    // ARRAY
+
+    // 1. nambah isi array
+
+      // const name = [];
+      // name [0] = "a"
+      // name [1] = "b"
+      // name [2] = "c"
+      // console.log(name);
+
+      // 2. hapus isi array
+
+      // const name = ["a", "b", "c", "d"]
+      // name [2] = undefined 
+      // console.log(name);
+
+      // 3. menampilkan isi array
+
+      // const name = ["a", "b", "c", "d", "e"]
+      // for( var i = 0; i < 5; i++) {
+      // console.log('nama', ':' ,name[i]);}
+      
+      
+      // 4. method pada array (push, pop, foreach, map , filter)
+      
+      // const name = ["a", "b", "c",]
+      // name.push('d', 'e') //untuk menambah array
+      // console.log(name);
+      
+      // const name = ["a", "b", "c",]
+      // name.pop() //array paling akhir seolah hilang
+      // console.log(name);
+      
+      // const name = [1,2,3,4,5]
+      // name.forEach(function(angka){
+      // console.log(angka);
+      // });
+
+      // const angka = [1,2,3,4,5]
+      // const angka2 = angka.map(function (nomer) {
+      // return nomer * 2;
+      // })
+      // console.log(angka2);
+
+      const angka = [1,2,3,4,5,6,7]
+      const angka2 = angka.filter(function(x) { //filter bisa mengembalikan banyak nilai
+      return x < 5;
+      })
+      console.log(angka2);
+
+  </script>
 </body>
+
 </html>
