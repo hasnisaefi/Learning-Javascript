@@ -55,7 +55,7 @@
       // console.log('nama', ':' ,name[i]);}
       
       
-      // 4. method pada array (push, pop, foreach, map , filter)
+      // 4. method pada array (push, pop, foreach, map , filter, sort, concat)
       
       // const name = ["a", "b", "c",]
       // name.push('d', 'e') //untuk menambah array
@@ -76,11 +76,25 @@
       // })
       // console.log(angka2);
 
-      const angka = [1,2,3,4,5,6,7]
-      const angka2 = angka.filter(function(x) { //filter bisa mengembalikan banyak nilai
-      return x < 5;
-      })
-      console.log(angka2);
+      // const angka = [1,2,3,4,5,6,7]
+      // const angka2 = angka.filter(function(x) { //filter bisa mengembalikan banyak nilai
+      // return x < 5;
+      // })
+      // console.log(angka2);
+
+      const array = [99, 50, 75, 95]
+      array.sort();
+      console.log(array);   // diurutkan dari yang paling kecil
+
+      const arrayy = ["hasni", "saefi", "anwarida"]
+      arrayy.sort();
+      console.log(arrayy);  // diurutkan sesuai abjad
+
+      const arrayConcat = [3 , 5, 7]
+      const arrayConcat2 = ['a', 'b', 'c']
+
+      const mergeArray = arrayConcat2.concat(arrayConcat)
+      console.log(mergeArray);       // penggabungan 2 array
 
   </script>
 </body>
