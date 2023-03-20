@@ -158,37 +158,38 @@
   const ab = document.getElementById('idnama');
   console.log(ab);
 
-const title = "Title ini"
-ab.innerHTML = title; // innerHTML digunakan untuk menampilkan title di tampilan
+  const title = "Title ini"
+  ab.innerHTML = title; // innerHTML digunakan untuk menampilkan title di tampilan
 
-const abs = document.getElementById('list');
-const arrayBaru = [1,2,3,4,5,6]
+  const abs = document.getElementById('list');
+  const arrayBaru = [1, 2, 3, 4, 5, 6]
 
 
-const object = {
-  nama: 'dshjgshgds'
-}
+  const object = {
+    nama: 'dshjgshgds'
+  }
 
-const stringData=  'Hasni';
+  const stringData = 'Hasni';
 
-function fungsi(bebas, tampunglagi) {
-  return `Nama saya ${bebas.last} ${tampunglagi}`
-}
+  function fungsi(bebas, tampunglagi) {
+    return `Nama saya ${bebas.last} ${tampunglagi}`
+  }
 
-const objectFun = {
-  nama: 'aaaa',
-  fungsiLain: fungsi(
-    {first: 'Hasni Saefi', last: 'adfadgsafash'},
-    'aaaaaaaaaaaaaaaaaaaaaaa',
+  const objectFun = {
+    nama: 'aaaa',
+    fungsiLain: fungsi(
+      { first: 'Hasni Saefi', last: 'adfadgsafash' },
+      'aaaaaaaaaaaaaaaaaaaaaaa',
     ),
-  alamat: 'aaaaa'
-}
+    alamat: 'aaaaa'
+  }
 
-console.log('>>>>>>>>>>>>>>>', objectFun);
+  console.log('>>>>>>>>>>>>>>>', objectFun);
 
-arrayBaru.map((val) => {
-  const buatLi = document.createElement('li');
-  abs.appendChild(buatLi).innerHTML = val
-});
+  arrayBaru.map((val) => {
+    const buatLi = document.createElement('li');
+    abs.appendChild(buatLi).innerHTML = val
+  });
 </script>
+
 </html>
