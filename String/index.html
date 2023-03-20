@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="p"></p>
+</body>
+<script>
+  // 1. Lenght => panjang kata
+
+  const string = "hello"
+  const str = string.length // panjang kata
+  console.log(str); // 5
+
+  // 2. Split
+
+  const strr = "hello"
+  const strr2 = strr.split(' ') 
+
+  // document.writeln(strr2); // ['hello']
+
+  // 3. toUpperCase => menjadi kapital 
+
+  const upperCase = "hello world"
+  const hello = upperCase.toUpperCase()
+
+  // document.writeln(hello) // => utuk menampilkan di halaman browser
+
+  // 4. toLowerCase => huruf kecil
+
+  const doc = document.getElementById('p')
+  const hal = "WORLD HELLO"
+  const halo = hal.toLowerCase()
+
+  doc.innerHTML = halo // => utuk menampilkan di halaman browser
+
+  // 5. slice
+
+  const slice = "hello world"
+  const slc = slice.slice(1, 4) // // Karena indeks Awal adalah 1 maka elemen pertama yang disalin adalah (e) sampai elemen yang berada tepat sebelum index Akhir yaitu (l).
+
+  // document.writeln(slc) => ell
+
+  // 6. charAt
+
+  const charAt = "hello world"
+  const char = charAt.charAt(2)
+
+  // document.writeln(char) 
+
+  // 7. lastIndexOf / indexOf
+
+  const idx = "hello world a"
+  const lastIdx = idx.indexOf("a")
+
+  document.writeln(lastIdx) // 12
+
+
+
+</script>
+
+</html>
