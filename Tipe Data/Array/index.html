@@ -11,95 +11,184 @@
 <body>
   <!-- <button onClick="alert('Tombol diklik!')">Klik Saya</button> -->
 
-  <script>
+  <h1 id="idnama">aaaaaaaaaaaa</h1>
 
-    // POPUP ( alert, prompt , confirm)
-
-    // Saat kita hanya ingin menampilkan informasi saja, maka gunakan alert().
-    // Saat kita ingin jawaban konfirmasi dari pengguna, maka gunakan confirm().
-    // dan apabila kita ingin mengambil data teks dari pengguna, maka gunakan prompt().
-
-    alert("halo")
-    
-     const yakin = confirm('apakah anda yakin');
-     if (yakin === true) {
-      alert('tekan OK!')
-     } else {
-      alert ('tekan cancel')
-     }
-
-     const nama = prompt("Siapa nama kamu?", "");
-     document.writeln(`halo, ${nama}`);
-
-    // ARRAY
-
-    // 1. nambah isi array
-
-      // const name = [];
-      // name [0] = "a"
-      // name [1] = "b"
-      // name [2] = "c"
-      // console.log(name);
-
-      // 2. hapus isi array
-
-      // const name = ["a", "b", "c", "d"]
-      // name [2] = undefined 
-      // console.log(name);
-
-      // 3. menampilkan isi array
-
-      // const name = ["a", "b", "c", "d", "e"]
-      // for( var i = 0; i < 5; i++) {
-      // console.log('nama', ':' ,name[i]);}
-      
-      // 4. method pada array
-      
-      // const name = ["a", "b", "c",]
-      // name.push('d', 'e') //untuk menambah array
-      // console.log(name);
-      
-      // const name = ["a", "b", "c",]
-      // name.pop() //array paling akhir seolah hilang
-      // console.log(name);
-      
-      // const name = [1,2,3,4,5]
-      // name.forEach(function(angka){
-      // console.log(angka);
-      // });
-
-      // const angka = [1,2,3,4,5]
-      // const angka2 = angka.map(function (nomer) {
-      // return nomer * 2;
-      // })
-      // console.log(angka2);
-
-      const angka = [1,2,3,4,5,6,7]
-      const angka2 = angka.filter(function(x) { //filter bisa mengembalikan banyak nilai 
-      return x < 5;
-      })
-      console.log(angka2); // => [1, 2, 3, 4]
-
-      const array = [99, 50, 75, 95]
-      array.sort();
-      console.log(array);   // diurutkan dari yang paling kecil => [50, 75, 95, 99]
-
-      const arrayy = ["hasni", "saefi", "anwarida"]
-      arrayy.sort();
-      console.log(arrayy);  // diurutkan sesuai abjad => ['anwarida', 'hasni', 'saefi']
-
-      const arrayConcat = [3 , 5, 7]
-      const arrayConcat2 = ['a', 'b', 'c']
-
-      const mergeArray = arrayConcat2.concat(arrayConcat)
-      console.log(mergeArray);  // penggabungan 2 array => ['a', 'b', 'c', 3, 5, 7]
-
-      const number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-      const num2 = number.slice(1, 4) // => [2, 3, 4]
-
-      console.log(num2); // Karena indeks Awal adalah 1 maka elemen pertama yang disalin adalah 2 sampai elemen yang berada tepat sebelum index Akhir yaitu 4.
-
-  </script>
+  <ul id="list"></ul>
 </body>
+<script>
 
+  // POPUP ( alert, prompt , confirm)
+
+  // Saat kita hanya ingin menampilkan informasi saja, maka gunakan alert().
+  // Saat kita ingin jawaban konfirmasi dari pengguna, maka gunakan confirm().
+  // dan apabila kita ingin mengambil data teks dari pengguna, maka gunakan prompt().
+
+  // alert("halo")
+
+  //  const yakin = confirm('lanjut?');
+  //  if (yakin === true) {
+  //   alert('tekan OK!')
+  //  } else {
+  //   alert ('tekan cancel')
+  //  }
+
+  //  const nama = prompt("Siapa nama kamu?", "");
+  //  document.writeln(`halo, ${nama}`);
+
+
+
+  // ARRAY
+
+  // 1. nambah isi array
+
+  const name = [];
+  name[0] = "a"
+  name[1] = "b"
+  name[2] = "c"
+  console.log(name);
+
+  // 2. hapus isi array
+
+  const apusArray = ["a", "b", "c", "d"]
+  delete apusArray['0']
+  delete apusArray['3']
+  console.log(apusArray);
+
+  // 3. menampilkan isi array
+
+  const ar = ["a", "b", "c", "d", "e"]
+  for (var i = 0; i < 5; i++) {
+    console.log('nama', ':', ar[i]);
+  }
+
+  // 4. method pada array
+
+  // PUSH
+
+  const a = ["a", "b", "c",]
+  a.push('d', 'e', 'f') //untuk menambah array
+  console.log(a);
+
+  // POP
+
+  const pop = ["a", "b", "c",]
+  pop.pop() //array paling akhir seolah hilang
+  console.log(pop);
+
+  // forEach
+
+  // const name = [1, 2, 3, 4, 5]
+  // name.forEach(function (angka) {
+  //   console.log(angka);
+  // });
+
+  // MAP
+
+  const angka = [1, 2, 3, 4, 5]
+  const angka2 = angka.map(function (nomer) {
+    return nomer * 2;
+  })
+  console.log(angka2);
+
+  // FILTER
+
+  const filter = [1, 2, 3, 4, 5, 6, 7]
+  const filter2 = filter.filter(function (x) { //filter bisa mengembalikan banyak nilai 
+    return x < 5;
+  })
+  console.log(filter2); // => [1, 2, 3, 4]
+
+  // SORT
+
+  const array = [99, 50, 75, 95]
+  array.sort();
+  console.log(array);   // diurutkan dari yang paling kecil => [50, 75, 95, 99]
+
+  const arrayy = ["hasni", "saefi", "anwarida"]
+  arrayy.sort();
+  console.log(arrayy);  // diurutkan sesuai abjad => ['anwarida', 'hasni', 'saefi']
+
+  // CONCAT
+
+  const arrayConcat = [3, 5, 7]
+  const arrayConcat2 = ['a', 'b', 'c']
+
+  // MERGE
+
+  const mergeArray = arrayConcat2.concat(arrayConcat)
+  console.log(mergeArray);  // penggabungan 2 array => ['a', 'b', 'c', 3, 5, 7]
+
+  // SLICE
+
+  const number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const num2 = number.slice(1, 4) // => [2, 3, 4]
+
+  console.log(num2); // Karena indeks Awal adalah 1 maka elemen pertama yang disalin adalah 2 sampai elemen yang berada tepat sebelum index Akhir yaitu 4.
+
+  const slice = [1, 2, 3, 4, 5, 6]
+  const newslice = slice.slice(-3)
+
+  console.log(newslice); // di hitung dari belakang
+
+  // JOIN
+
+  const arrayJoin = ['a', 'b', 'c']
+  console.log(arrayJoin.join()); // a,b,c
+
+  const Join = ['a', 'b', 'c']
+  console.log(Join.join('-')); // a-b-c
+
+  // SHIFT / UN SHIFT
+
+  const arr = [20, 30, 40, 50]
+  arr.shift() // menghapus elemen array di awal array.
+  console.log(arr);
+
+  const arr1 = [20, 30, 40, 50]
+  arr1.unshift(60) // menambah elemen array di awal array.
+  console.log(arr1);
+
+  const splice = ["a", "b", "c", "d"]
+  const splice2 = splice.splice(2)
+
+  console.log(splice2.toString()); // ['c', 'd']
+  //Method toString() dan toLocaleString() berfungsi untuk menkonversi array menjadi string.
+  console.log(splice2);
+
+  const ab = document.getElementById('idnama');
+  console.log(ab);
+
+const title = "Title ini"
+ab.innerHTML = title; // innerHTML digunakan untuk menampilkan title di tampilan
+
+const abs = document.getElementById('list');
+const arrayBaru = [1,2,3,4,5,6]
+
+
+const object = {
+  nama: 'dshjgshgds'
+}
+
+const stringData=  'Hasni';
+
+function fungsi(bebas, tampunglagi) {
+  return `Nama saya ${bebas.last} ${tampunglagi}`
+}
+
+const objectFun = {
+  nama: 'aaaa',
+  fungsiLain: fungsi(
+    {first: 'Hasni Saefi', last: 'adfadgsafash'},
+    'aaaaaaaaaaaaaaaaaaaaaaa',
+    ),
+  alamat: 'aaaaa'
+}
+
+console.log('>>>>>>>>>>>>>>>', objectFun);
+
+arrayBaru.map((val) => {
+  const buatLi = document.createElement('li');
+  abs.appendChild(buatLi).innerHTML = val
+});
+</script>
 </html>
