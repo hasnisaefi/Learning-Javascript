@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number/ Math in Javascript</title>
+</head>
+<body>
+  <script>
+    // 1. toFixed
+
+    const number = 223.15;
+    // toFixed( berapapun angka di depan koma akan tetap dibaca sebagai index ke 0 )
+    const update = number.toFixed(2)
+
+    document.writeln(update)   
+    
+    // MATH
+    
+    const math = 23.15;
+    const mathh = Math.ceil(math)
+    
+    // document.writeln(mathh) // dibulatkan => 24
+    
+    // 1. Math.round / Math.florr => hanya angka didepan koma
+    // 2. Math.pow(6,2) => pangkat (36)
+    // 3. Math.sqrt(36) => pangkat (6)
+    // 4. Math.abs(-8) => yg tadinya - di ubah jadi + (8)
+    // 5. Math.min(1, 2, 3, 4, 5) => (1)
+    // 6. Math.max(1, 2, 3, 4, 5) => (5)
+    // 7. Math.floor(Math.random() * 7) => tampilkan angka random dari 0-6
+    // 8. Math.sin
+    // 9. Math.cos
+    // 10.Math.tan
+
+  </script>
+</body>
+</html>
